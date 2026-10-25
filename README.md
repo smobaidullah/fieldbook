@@ -2,7 +2,7 @@
 
 An operations dashboard for trade and home-service businesses (plumbing, electrical, HVAC and so on): incoming jobs, scheduling, technician workload, customers and invoicing in one place.
 
-**Live demo:** https://fieldbook-demo.netlify.app (login: `demo@fieldbook.app` / `demo1234`, or press "Fill in")
+**Live demo:** https://smobaidullah.github.io/fieldbook/ (login: `demo@fieldbook.app` / `demo1234`, or press "Fill in")
 
 ## What it does
 

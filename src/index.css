@@ -95,7 +95,7 @@ button, input, select { font: inherit; color: inherit; }
 .btn {
   display: inline-flex; align-items: center; gap: 7px;
   border: 1px solid var(--border); background: var(--panel);
-  padding: 8px 13px; border-radius: 8px; cursor: pointer; font-weight: 500;
+  padding: 8px 13px; border-radius: 8px; cursor: pointer; font-weight: 500; text-decoration: none;
 }
 .btn:hover { background: var(--panel-2); }
 .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--panel); }
@@ -209,3 +209,10 @@ tbody tr.clickable:hover { background: var(--panel-2); }
   .search { flex: 1; }
   .form-row { grid-template-columns: 1fr; }
 }
+
+/* Recharts sets fill/stroke as SVG attributes, which can't read CSS variables,
+   so theme the chart from CSS instead. */
+.recharts-bar-rectangle path { fill: var(--accent); }
+.recharts-cartesian-grid line { stroke: var(--border); }
+.recharts-cartesian-axis-tick-value { fill: var(--muted); }
+.recharts-tooltip-cursor { fill: var(--panel-2); }
